@@ -1,6 +1,6 @@
 ---
-title: Example Category
-description: A description of this category
+title: Bitcoin
+description: Posts related to Bitcoin.
 image:
 
 # Badge style
