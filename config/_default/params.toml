@@ -19,7 +19,7 @@ subtitle = "Kenshin Takahiro, a Bitcoiner Ninja!"
 [sidebar.avatar]
 enabled = true
 local = true
-src = "img/avatar.png"
+src = "img/Kenshin-ninja-profile-300.png"
 
 [article]
 math = false
