@@ -22,3 +22,11 @@ url = "https://twitter.com/eurohodler"
 
 [social.params]
 icon = "brand-twitter"
+
+[[social]]
+identifier = "nostr"
+name = "Nostr"
+url = "https://nosta.me/npub10xxhztawwgtuapdej49q5jgfawu5p0f2j2tzuaxxww2hl546ct3sr7pcjl"
+
+[social.params]
+icon = "user"
