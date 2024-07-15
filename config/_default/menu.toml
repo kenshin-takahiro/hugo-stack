@@ -16,9 +16,17 @@ url = "https://github.com/kenshin-takahiro"
 icon = "brand-github"
 
 [[social]]
+identifier = "gitlab"
+name = "GitLab"
+url = "https://gitlab.com/kenshin21"
+
+[social.params]
+icon = "brand-gitlab"
+
+[[social]]
 identifier = "twitter"
 name = "Twitter"
-url = "https://twitter.com/eurohodler"
+url = "https://twitter.com/kenshin_ninja"
 
 [social.params]
 icon = "brand-twitter"
