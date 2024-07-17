@@ -13,7 +13,7 @@ weight: 1
 ---
 
 # wgnord
-NordVPN is not available to install yet on NixOS. Thoug, there are a few ways to use it on NixOS. Here is one relatively easy by using [wgnord](https://github.com/phirecc/wgnord).
+NordVPN is not available to install yet on NixOS. Though, there are a few ways to use it on NixOS. Here is one relatively easy by using [wgnord](https://github.com/phirecc/wgnord).
 
 ## Install
 Packages to install/include in the nix config:
