@@ -13,6 +13,7 @@ tags:
     - Nostr
     - Bitcoin
     - Lightning
+weight: 1
 ---
 
 This is a simple guide to create a Nostr account and connect a Bitcoin Lighting wallet to it.
