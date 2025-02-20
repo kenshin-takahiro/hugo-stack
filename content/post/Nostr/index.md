@@ -39,4 +39,4 @@ So let's see now how to find the Nostr credentials and connect on a Nostr app...
 8. Now back on Primal app go to settings and under wallet, disable the Primal wallet and choose to enter a custom wallet. There press to scan a QR code and scan the code from Coinos. Alternatively if you are doing it on the same device then copy the link from Coinos and paste it in the custom settings in Primal. 
 9. Introduce yourself by writing about you on a note. Make sure to end with the hashtag #introductions in order for more people to see your first note and zap you your first sats…!
 
-Cover image by <a href="https://unsplash.com/@pawel_czerwinski?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Pawel Czerwinski</a> on <a href="https://unsplash.com/photos/a-black-and-purple-background-with-a-circular-design-9mwOUgWNwMU">Unsplash</a>
+Cover image by <a href="https://unsplash.com/@pawel_czerwinski">Pawel Czerwinski</a> on <a href="https://unsplash.com/photos/a-black-and-purple-background-with-a-circular-design-9mwOUgWNwMU">Unsplash</a>

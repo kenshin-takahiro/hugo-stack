@@ -75,4 +75,4 @@ Example:
 ```
 
 ---
-Cover image by <a href="https://unsplash.com/@pawel_czerwinski?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Pawel Czerwinski</a> on <a href="https://unsplash.com/photos/a-black-and-gold-abstract-painting-of-cubes-9QL8ZbEP1ew">Unsplash</a>
+Cover image by <a href="https://unsplash.com/@pawel_czerwinski">Pawel Czerwinski</a> on <a href="https://unsplash.com/photos/a-black-and-gold-abstract-painting-of-cubes-9QL8ZbEP1ew">Unsplash</a>
