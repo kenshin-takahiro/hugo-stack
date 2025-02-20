@@ -1,14 +1,21 @@
 ---
-title: "Getting Started With Nostr"
-description: 
+title: Getting Started With Nostr
+description: A quick guide to setup a Nostr account with a working lightning address.
 date: 2025-02-19T01:28:43+01:00
-image: 
-math: 
-license: 
-hidden: false
-comments: true
-draft: true
+slug: nostr-getting-started
+image: cover.jpg
+draft: false
+categories:
+    - Nostr
+    - Bitcoin
+    - Lightning
+tags:
+    - Nostr
+    - Bitcoin
+    - Lightning
 ---
+
+This is a simple guide to create a Nostr account and connect a Bitcoin Lighting wallet to it.
 
 ## New Nostr account 
 ### Register your wallet
@@ -30,3 +37,5 @@ So let's see now how to find the Nostr credentials and connect on a Nostr app...
 7. Go back to Coinos and to the Nostr Integration Settings you saw in steps 1 and 2, but now copy the Nostr wallet connect information or show the QR code.
 8. Now back on Primal app go to settings and under wallet, disable the Primal wallet and choose to enter a custom wallet. There press to scan a QR code and scan the code from Coinos. Alternatively if you are doing it on the same device then copy the link from Coinos and paste it in the custom settings in Primal. 
 9. Introduce yourself by writing about you on a note. Make sure to end with the hashtag #introductions in order for more people to see your first note and zap you your first sats…!
+
+Cover image by <a href="https://unsplash.com/@pawel_czerwinski?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Pawel Czerwinski</a> on <a href="https://unsplash.com/photos/a-black-and-purple-background-with-a-circular-design-9mwOUgWNwMU?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
