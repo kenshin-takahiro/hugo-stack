@@ -33,5 +33,5 @@ sudo wgnord d # disconnect
 ```
 
 ---
-Cover photo by <a href="https://unsplash.com/@pawel_czerwinski">Pawel Czerwinski</a> on <a href="https://unsplash.com/photos/a-black-and-purple-background-with-a-circular-design-9mwOUgWNwMU">Unsplash</a>
-  
+Cover image by <a href="https://unsplash.com/@pawel_czerwinski?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Pawel Czerwinski</a> on <a href="https://unsplash.com/photos/a-black-and-blue-abstract-background-with-squares-and-rectangles-O_lLr6e8NtQ">Unsplash</a>
+
