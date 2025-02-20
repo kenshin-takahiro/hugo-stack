@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Linux on Kenshin the Ninja!</title><link>https://kenshin.ninja/categories/linux/</link><description>Recent content in Linux on Kenshin the Ninja!</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Thu, 18 Jul 2024 12:22:00 +0000</lastBuildDate><atom:link href="https://kenshin.ninja/categories/linux/index.xml" rel="self" type="application/rss+xml"/><item><title>Kasm Workspaces</title><link>https://kenshin.ninja/p/kasm-workspaces/</link><pubDate>Thu, 18 Jul 2024 12:22:00 +0000</pubDate><guid>https://kenshin.ninja/p/kasm-workspaces/</guid><description>&lt;img src="https://kenshin.ninja/p/kasm-workspaces/cover.jpg" alt="Featured image of post Kasm Workspaces" />&lt;h1 id="kasm-workspaces">Kasm Workspaces
+&lt;/h1>&lt;p>&lt;a class="link" href="https://www.kasmweb.com" target="_blank" rel="noopener"
+>Kasm⁠ Workspaces&lt;/a> is a docker container streaming platform for delivering browser-based access to desktops, applications, and web services.&lt;/p>
+&lt;h2 id="install-with-docker-compose">Install with Docker Compose
+&lt;/h2>&lt;p>Template and instructions from &lt;a class="link" href="https://hub.docker.com/r/linuxserver/kasm" target="_blank" rel="noopener"
+>linuxserver.io&lt;/a>.&lt;/p>
+&lt;p>Create a file &lt;code>compose.yaml&lt;/code> and copy paste inside it:&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;span class="lnt">12
+&lt;/span>&lt;span class="lnt">13
+&lt;/span>&lt;span class="lnt">14
+&lt;/span>&lt;span class="lnt">15
+&lt;/span>&lt;span class="lnt">16
+&lt;/span>&lt;span class="lnt">17
+&lt;/span>&lt;span class="lnt">18
+&lt;/span>&lt;span class="lnt">19
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-yaml" data-lang="yaml">&lt;span class="line">&lt;span class="cl">&lt;span class="nt">services&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">kasm&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">image&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">lscr.io/linuxserver/kasm:latest&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">container_name&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">kasm&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">privileged&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="kc">true&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">environment&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>- &lt;span class="l">KASM_PORT=443&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>- &lt;span class="l">DOCKER_HUB_USERNAME=USER&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="c">#optional&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>- &lt;span class="l">DOCKER_HUB_PASSWORD=PASS&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="c">#optional&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>- &lt;span class="l">DOCKER_MTU=1500&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="c">#optional&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">volumes&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>- &lt;span class="l">./data:/opt&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>- &lt;span class="l">./profiles:/profiles&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="c">#optional&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>- &lt;span class="l">./dev/input:/dev/input&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="c">#optional&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>- &lt;span class="l">./run/udev/data:/run/udev/data&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="c">#optional&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">ports&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>- &lt;span class="m">3006&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="m">3000&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="c">#custom port 3006&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>- &lt;span class="m">446&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="m">443&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="c">#custom port 446&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">restart&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">unless-stopped&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>&lt;em>Note: Ports 3006 &amp;amp; 446 are custom, make them anything you want, but don&amp;rsquo;t change the right side: port 3000 &amp;amp; 443.&lt;/em>&lt;/p>
+&lt;h3 id="start-the-container">Start the container
+&lt;/h3>&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">docker compose pull
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">docker compose up -d
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h3 id="access">Access
+&lt;/h3>&lt;p>Access the interface from: &lt;code>your.ip:446&lt;/code>&lt;/p>
+&lt;h3 id="optimizations">Optimizations
+&lt;/h3>&lt;p>Disable pulseaudio to lower cpu consumption:&lt;/p>
+&lt;ul>
+&lt;li>Go to Admin-&amp;gt;Workspaces-&amp;gt;Edit a workspace:&lt;/li>
+&lt;li>In Docker Run Config Override (JSON)
+Add inside the &amp;ldquo;environment&amp;rdquo;: {}:
+, &amp;ldquo;START_PULSEAUDIO&amp;rdquo;: &amp;ldquo;0&amp;rdquo;&lt;/li>
+&lt;/ul>
+&lt;p>Example:&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;span class="lnt">5
+&lt;/span>&lt;span class="lnt">6
+&lt;/span>&lt;span class="lnt">7
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">{
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &amp;#34;hostname&amp;#34;: &amp;#34;kasm&amp;#34;,
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &amp;#34;environment&amp;#34;: {
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &amp;#34;TERMINAL_ARGS&amp;#34;: &amp;#34;--fullscreen --hide-borders --hide-menubar --zoom=-1 --hide-scrollbar&amp;#34;,
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &amp;#34;START_PULSEAUDIO&amp;#34;: &amp;#34;0&amp;#34;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> }
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">}
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;hr>
+&lt;p>Cover image by &lt;a href="https://unsplash.com/@pawel_czerwinski">Pawel Czerwinski&lt;/a> on &lt;a href="https://unsplash.com/photos/a-black-and-gold-abstract-painting-of-cubes-9QL8ZbEP1ew">Unsplash&lt;/a>&lt;/p></description></item><item><title>NordVPN on NixOS with wgnord</title><link>https://kenshin.ninja/p/wgnord-nixos-nordvpn/</link><pubDate>Wed, 17 Jul 2024 12:22:00 +0000</pubDate><guid>https://kenshin.ninja/p/wgnord-nixos-nordvpn/</guid><description>&lt;img src="https://kenshin.ninja/p/wgnord-nixos-nordvpn/cover.jpg" alt="Featured image of post NordVPN on NixOS with wgnord" />&lt;h1 id="wgnord">wgnord
+&lt;/h1>&lt;p>NordVPN is not available to install yet on NixOS. Though, there are a few ways to use it on NixOS. Here is one relatively easy by using &lt;a class="link" href="https://github.com/phirecc/wgnord" target="_blank" rel="noopener"
+>wgnord&lt;/a>.&lt;/p>
+&lt;h2 id="install">Install
+&lt;/h2>&lt;p>Packages to install/include in the nix config:&lt;/p>
+&lt;ul>
+&lt;li>openresolv&lt;/li>
+&lt;li>wireguard-tools&lt;/li>
+&lt;li>wgnord&lt;/li>
+&lt;/ul>
+&lt;p>Discussion &amp;amp; tips from: &lt;a class="link" href="https://github.com/NixOS/nixpkgs/issues/101864#issuecomment-1859214194" target="_blank" rel="noopener"
+>https://github.com/NixOS/nixpkgs/issues/101864#issuecomment-1859214194&lt;/a>&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;span class="lnt">5
+&lt;/span>&lt;span class="lnt">6
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">sudo mkdir /etc/wireguard &lt;span class="c1"># create if it doesn&amp;#39;t exist&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">sudo mkdir -p /var/lib/wgnord &lt;span class="c1"># create if it doesn&amp;#39;t exist&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">sudo nano /var/lib/wgnord/template.conf &lt;span class="c1"># copy content from https://raw.githubusercontent.com/phirecc/wgnord/master/template.conf&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">sudo wgnord l &lt;span class="s2">&amp;#34;keyxxx&amp;#34;&lt;/span> &lt;span class="c1"># create a token in the NordVPN dashboard&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">sudo wgnord c Germany &lt;span class="c1"># connect to a server, e.g Germany &lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">sudo wgnord d &lt;span class="c1"># disconnect&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;hr>
+&lt;p>Cover image by &lt;a href="https://unsplash.com/@pawel_czerwinski">Pawel Czerwinski&lt;/a> on &lt;a href="https://unsplash.com/photos/a-black-and-blue-abstract-background-with-squares-and-rectangles-O_lLr6e8NtQ">Unsplash&lt;/a>&lt;/p></description></item></channel></rss>

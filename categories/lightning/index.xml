@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Lightning on Kenshin the Ninja!</title><link>https://kenshin.ninja/categories/lightning/</link><description>Recent content in Lightning on Kenshin the Ninja!</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Wed, 19 Feb 2025 01:28:43 +0100</lastBuildDate><atom:link href="https://kenshin.ninja/categories/lightning/index.xml" rel="self" type="application/rss+xml"/><item><title>Getting Started With Nostr</title><link>https://kenshin.ninja/p/nostr-getting-started/</link><pubDate>Wed, 19 Feb 2025 01:28:43 +0100</pubDate><guid>https://kenshin.ninja/p/nostr-getting-started/</guid><description>&lt;img src="https://kenshin.ninja/p/nostr-getting-started/cover.jpg" alt="Featured image of post Getting Started With Nostr" />&lt;p>This is a simple guide to create a Nostr account and connect a Bitcoin Lighting wallet to it.&lt;/p>
+&lt;h2 id="new-nostr-account">New Nostr account
+&lt;/h2>&lt;h3 id="register-your-wallet">Register your wallet
+&lt;/h3>&lt;ol>
+&lt;li>First go to &lt;a class="link" href="https://coinos.io/register" target="_blank" rel="noopener"
+>Coinos&lt;/a>&lt;/li>
+&lt;li>Create an account by choosing one of the random usernames or by typing your own.&lt;/li>
+&lt;li>Write a strong password and note it somewhere safe (ideally a password manager).&lt;/li>
+&lt;li>Your account on Coinos is ready! Now you have a brand new fully finctional Lightning Address in the form of &lt;a class="link" href="mailto:yourusername@coinos.io" >yourusername@coinos.io&lt;/a>&lt;/li>
+&lt;li>That account also created for you a Nostr account as well!&lt;/li>
+&lt;/ol>
+&lt;p>So let&amp;rsquo;s see now how to find the Nostr credentials and connect on a Nostr app&amp;hellip;&lt;/p>
+&lt;h3 id="connect-to-a-nostr-app">Connect to a Nostr app
+&lt;/h3>&lt;ol>
+&lt;li>On Coinos, on top right corner menu icon, go to &lt;strong>Settings&lt;/strong> and in there choose the middle tab that says Settings again.&lt;/li>
+&lt;li>Under integrations press Nostr and then find the secret key (in the form of nsecxxxx), note it somewhere safe (ideally a password manager).&lt;/li>
+&lt;li>Now you can go on a Nostr app and login with your nsecxxxx key. I suggest Amethyst on Android and Damus on iOS, or for a simpler interface on Android, iOS and the web try Primal.&lt;/li>
+&lt;li>Go with &lt;a class="link" href="https://primal.net" target="_blank" rel="noopener"
+>Primal&lt;/a> for now for ease of use, so download the app and login with the nsec you saved earlier.&lt;/li>
+&lt;li>When you login, go to the menu on the left and choose your profile to start customizing it.&lt;/li>
+&lt;li>Upload a picture, choose a username and enter your new coinos Lightning Address (&lt;a class="link" href="mailto:username@coinos.io" >username@coinos.io&lt;/a>) in the Bitcoin Lightning Address field and Verified Nostr Address (NIP 05) field.&lt;/li>
+&lt;li>Go back to Coinos and to the Nostr Integration Settings you saw in steps 1 and 2, but now copy the Nostr wallet connect information or show the QR code.&lt;/li>
+&lt;li>Now back on Primal app go to settings and under wallet, disable the Primal wallet and choose to enter a custom wallet. There press to scan a QR code and scan the code from Coinos. Alternatively if you are doing it on the same device then copy the link from Coinos and paste it in the custom settings in Primal.&lt;/li>
+&lt;li>Introduce yourself by writing about you on a note. Make sure to end with the hashtag #introductions in order for more people to see your first note and zap you your first sats…!&lt;/li>
+&lt;/ol>
+&lt;p>Cover image by &lt;a href="https://unsplash.com/@pawel_czerwinski">Pawel Czerwinski&lt;/a> on &lt;a href="https://unsplash.com/photos/a-black-and-purple-background-with-a-circular-design-9mwOUgWNwMU">Unsplash&lt;/a>&lt;/p></description></item></channel></rss>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Desktop on Kenshin the Ninja!</title><link>https://kenshin.ninja/categories/desktop/</link><description>Recent content in Desktop on Kenshin the Ninja!</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Wed, 17 Jul 2024 12:22:00 +0000</lastBuildDate><atom:link href="https://kenshin.ninja/categories/desktop/index.xml" rel="self" type="application/rss+xml"/><item><title>NordVPN on NixOS with wgnord</title><link>https://kenshin.ninja/p/wgnord-nixos-nordvpn/</link><pubDate>Wed, 17 Jul 2024 12:22:00 +0000</pubDate><guid>https://kenshin.ninja/p/wgnord-nixos-nordvpn/</guid><description>&lt;img src="https://kenshin.ninja/p/wgnord-nixos-nordvpn/cover.jpg" alt="Featured image of post NordVPN on NixOS with wgnord" />&lt;h1 id="wgnord">wgnord
+&lt;/h1>&lt;p>NordVPN is not available to install yet on NixOS. Though, there are a few ways to use it on NixOS. Here is one relatively easy by using &lt;a class="link" href="https://github.com/phirecc/wgnord" target="_blank" rel="noopener"
+>wgnord&lt;/a>.&lt;/p>
+&lt;h2 id="install">Install
+&lt;/h2>&lt;p>Packages to install/include in the nix config:&lt;/p>
+&lt;ul>
+&lt;li>openresolv&lt;/li>
+&lt;li>wireguard-tools&lt;/li>
+&lt;li>wgnord&lt;/li>
+&lt;/ul>
+&lt;p>Discussion &amp;amp; tips from: &lt;a class="link" href="https://github.com/NixOS/nixpkgs/issues/101864#issuecomment-1859214194" target="_blank" rel="noopener"
+>https://github.com/NixOS/nixpkgs/issues/101864#issuecomment-1859214194&lt;/a>&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;span class="lnt">5
+&lt;/span>&lt;span class="lnt">6
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">sudo mkdir /etc/wireguard &lt;span class="c1"># create if it doesn&amp;#39;t exist&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">sudo mkdir -p /var/lib/wgnord &lt;span class="c1"># create if it doesn&amp;#39;t exist&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">sudo nano /var/lib/wgnord/template.conf &lt;span class="c1"># copy content from https://raw.githubusercontent.com/phirecc/wgnord/master/template.conf&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">sudo wgnord l &lt;span class="s2">&amp;#34;keyxxx&amp;#34;&lt;/span> &lt;span class="c1"># create a token in the NordVPN dashboard&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">sudo wgnord c Germany &lt;span class="c1"># connect to a server, e.g Germany &lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">sudo wgnord d &lt;span class="c1"># disconnect&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;hr>
+&lt;p>Cover image by &lt;a href="https://unsplash.com/@pawel_czerwinski">Pawel Czerwinski&lt;/a> on &lt;a href="https://unsplash.com/photos/a-black-and-blue-abstract-background-with-squares-and-rectangles-O_lLr6e8NtQ">Unsplash&lt;/a>&lt;/p></description></item></channel></rss>

@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Kenshin the Ninja!</title><link>https://kenshin.ninja/</link><description>Recent content on Kenshin the Ninja!</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Wed, 19 Feb 2025 01:28:43 +0100</lastBuildDate><atom:link href="https://kenshin.ninja/index.xml" rel="self" type="application/rss+xml"/><item><title>Getting Started With Nostr</title><link>https://kenshin.ninja/p/nostr-getting-started/</link><pubDate>Wed, 19 Feb 2025 01:28:43 +0100</pubDate><guid>https://kenshin.ninja/p/nostr-getting-started/</guid><description>&lt;img src="https://kenshin.ninja/p/nostr-getting-started/cover.jpg" alt="Featured image of post Getting Started With Nostr" />&lt;p>This is a simple guide to create a Nostr account and connect a Bitcoin Lighting wallet to it.&lt;/p>
+&lt;h2 id="new-nostr-account">New Nostr account
+&lt;/h2>&lt;h3 id="register-your-wallet">Register your wallet
+&lt;/h3>&lt;ol>
+&lt;li>First go to &lt;a class="link" href="https://coinos.io/register" target="_blank" rel="noopener"
+>Coinos&lt;/a>&lt;/li>
+&lt;li>Create an account by choosing one of the random usernames or by typing your own.&lt;/li>
+&lt;li>Write a strong password and note it somewhere safe (ideally a password manager).&lt;/li>
+&lt;li>Your account on Coinos is ready! Now you have a brand new fully finctional Lightning Address in the form of &lt;a class="link" href="mailto:yourusername@coinos.io" >yourusername@coinos.io&lt;/a>&lt;/li>
+&lt;li>That account also created for you a Nostr account as well!&lt;/li>
+&lt;/ol>
+&lt;p>So let&amp;rsquo;s see now how to find the Nostr credentials and connect on a Nostr app&amp;hellip;&lt;/p>
+&lt;h3 id="connect-to-a-nostr-app">Connect to a Nostr app
+&lt;/h3>&lt;ol>
+&lt;li>On Coinos, on top right corner menu icon, go to &lt;strong>Settings&lt;/strong> and in there choose the middle tab that says Settings again.&lt;/li>
+&lt;li>Under integrations press Nostr and then find the secret key (in the form of nsecxxxx), note it somewhere safe (ideally a password manager).&lt;/li>
+&lt;li>Now you can go on a Nostr app and login with your nsecxxxx key. I suggest Amethyst on Android and Damus on iOS, or for a simpler interface on Android, iOS and the web try Primal.&lt;/li>
+&lt;li>Go with &lt;a class="link" href="https://primal.net" target="_blank" rel="noopener"
+>Primal&lt;/a> for now for ease of use, so download the app and login with the nsec you saved earlier.&lt;/li>
+&lt;li>When you login, go to the menu on the left and choose your profile to start customizing it.&lt;/li>
+&lt;li>Upload a picture, choose a username and enter your new coinos Lightning Address (&lt;a class="link" href="mailto:username@coinos.io" >username@coinos.io&lt;/a>) in the Bitcoin Lightning Address field and Verified Nostr Address (NIP 05) field.&lt;/li>
+&lt;li>Go back to Coinos and to the Nostr Integration Settings you saw in steps 1 and 2, but now copy the Nostr wallet connect information or show the QR code.&lt;/li>
+&lt;li>Now back on Primal app go to settings and under wallet, disable the Primal wallet and choose to enter a custom wallet. There press to scan a QR code and scan the code from Coinos. Alternatively if you are doing it on the same device then copy the link from Coinos and paste it in the custom settings in Primal.&lt;/li>
+&lt;li>Introduce yourself by writing about you on a note. Make sure to end with the hashtag #introductions in order for more people to see your first note and zap you your first sats…!&lt;/li>
+&lt;/ol>
+&lt;p>Cover image by &lt;a href="https://unsplash.com/@pawel_czerwinski">Pawel Czerwinski&lt;/a> on &lt;a href="https://unsplash.com/photos/a-black-and-purple-background-with-a-circular-design-9mwOUgWNwMU">Unsplash&lt;/a>&lt;/p></description></item><item><title>Kasm Workspaces</title><link>https://kenshin.ninja/p/kasm-workspaces/</link><pubDate>Thu, 18 Jul 2024 12:22:00 +0000</pubDate><guid>https://kenshin.ninja/p/kasm-workspaces/</guid><description>&lt;img src="https://kenshin.ninja/p/kasm-workspaces/cover.jpg" alt="Featured image of post Kasm Workspaces" />&lt;h1 id="kasm-workspaces">Kasm Workspaces
+&lt;/h1>&lt;p>&lt;a class="link" href="https://www.kasmweb.com" target="_blank" rel="noopener"
+>Kasm⁠ Workspaces&lt;/a> is a docker container streaming platform for delivering browser-based access to desktops, applications, and web services.&lt;/p>
+&lt;h2 id="install-with-docker-compose">Install with Docker Compose
+&lt;/h2>&lt;p>Template and instructions from &lt;a class="link" href="https://hub.docker.com/r/linuxserver/kasm" target="_blank" rel="noopener"
+>linuxserver.io&lt;/a>.&lt;/p>
+&lt;p>Create a file &lt;code>compose.yaml&lt;/code> and copy paste inside it:&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;span class="lnt">12
+&lt;/span>&lt;span class="lnt">13
+&lt;/span>&lt;span class="lnt">14
+&lt;/span>&lt;span class="lnt">15
+&lt;/span>&lt;span class="lnt">16
+&lt;/span>&lt;span class="lnt">17
+&lt;/span>&lt;span class="lnt">18
+&lt;/span>&lt;span class="lnt">19
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-yaml" data-lang="yaml">&lt;span class="line">&lt;span class="cl">&lt;span class="nt">services&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">kasm&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">image&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">lscr.io/linuxserver/kasm:latest&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">container_name&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">kasm&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">privileged&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="kc">true&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">environment&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>- &lt;span class="l">KASM_PORT=443&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>- &lt;span class="l">DOCKER_HUB_USERNAME=USER&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="c">#optional&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>- &lt;span class="l">DOCKER_HUB_PASSWORD=PASS&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="c">#optional&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>- &lt;span class="l">DOCKER_MTU=1500&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="c">#optional&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">volumes&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>- &lt;span class="l">./data:/opt&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>- &lt;span class="l">./profiles:/profiles&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="c">#optional&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>- &lt;span class="l">./dev/input:/dev/input&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="c">#optional&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>- &lt;span class="l">./run/udev/data:/run/udev/data&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="c">#optional&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">ports&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>- &lt;span class="m">3006&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="m">3000&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="c">#custom port 3006&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>- &lt;span class="m">446&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="m">443&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="c">#custom port 446&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">restart&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">unless-stopped&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>&lt;em>Note: Ports 3006 &amp;amp; 446 are custom, make them anything you want, but don&amp;rsquo;t change the right side: port 3000 &amp;amp; 443.&lt;/em>&lt;/p>
+&lt;h3 id="start-the-container">Start the container
+&lt;/h3>&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">docker compose pull
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">docker compose up -d
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h3 id="access">Access
+&lt;/h3>&lt;p>Access the interface from: &lt;code>your.ip:446&lt;/code>&lt;/p>
+&lt;h3 id="optimizations">Optimizations
+&lt;/h3>&lt;p>Disable pulseaudio to lower cpu consumption:&lt;/p>
+&lt;ul>
+&lt;li>Go to Admin-&amp;gt;Workspaces-&amp;gt;Edit a workspace:&lt;/li>
+&lt;li>In Docker Run Config Override (JSON)
+Add inside the &amp;ldquo;environment&amp;rdquo;: {}:
+, &amp;ldquo;START_PULSEAUDIO&amp;rdquo;: &amp;ldquo;0&amp;rdquo;&lt;/li>
+&lt;/ul>
+&lt;p>Example:&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;span class="lnt">5
+&lt;/span>&lt;span class="lnt">6
+&lt;/span>&lt;span class="lnt">7
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">{
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &amp;#34;hostname&amp;#34;: &amp;#34;kasm&amp;#34;,
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &amp;#34;environment&amp;#34;: {
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &amp;#34;TERMINAL_ARGS&amp;#34;: &amp;#34;--fullscreen --hide-borders --hide-menubar --zoom=-1 --hide-scrollbar&amp;#34;,
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &amp;#34;START_PULSEAUDIO&amp;#34;: &amp;#34;0&amp;#34;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> }
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">}
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;hr>
+&lt;p>Cover image by &lt;a href="https://unsplash.com/@pawel_czerwinski">Pawel Czerwinski&lt;/a> on &lt;a href="https://unsplash.com/photos/a-black-and-gold-abstract-painting-of-cubes-9QL8ZbEP1ew">Unsplash&lt;/a>&lt;/p></description></item><item><title>NordVPN on NixOS with wgnord</title><link>https://kenshin.ninja/p/wgnord-nixos-nordvpn/</link><pubDate>Wed, 17 Jul 2024 12:22:00 +0000</pubDate><guid>https://kenshin.ninja/p/wgnord-nixos-nordvpn/</guid><description>&lt;img src="https://kenshin.ninja/p/wgnord-nixos-nordvpn/cover.jpg" alt="Featured image of post NordVPN on NixOS with wgnord" />&lt;h1 id="wgnord">wgnord
+&lt;/h1>&lt;p>NordVPN is not available to install yet on NixOS. Though, there are a few ways to use it on NixOS. Here is one relatively easy by using &lt;a class="link" href="https://github.com/phirecc/wgnord" target="_blank" rel="noopener"
+>wgnord&lt;/a>.&lt;/p>
+&lt;h2 id="install">Install
+&lt;/h2>&lt;p>Packages to install/include in the nix config:&lt;/p>
+&lt;ul>
+&lt;li>openresolv&lt;/li>
+&lt;li>wireguard-tools&lt;/li>
+&lt;li>wgnord&lt;/li>
+&lt;/ul>
+&lt;p>Discussion &amp;amp; tips from: &lt;a class="link" href="https://github.com/NixOS/nixpkgs/issues/101864#issuecomment-1859214194" target="_blank" rel="noopener"
+>https://github.com/NixOS/nixpkgs/issues/101864#issuecomment-1859214194&lt;/a>&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;span class="lnt">5
+&lt;/span>&lt;span class="lnt">6
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">sudo mkdir /etc/wireguard &lt;span class="c1"># create if it doesn&amp;#39;t exist&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">sudo mkdir -p /var/lib/wgnord &lt;span class="c1"># create if it doesn&amp;#39;t exist&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">sudo nano /var/lib/wgnord/template.conf &lt;span class="c1"># copy content from https://raw.githubusercontent.com/phirecc/wgnord/master/template.conf&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">sudo wgnord l &lt;span class="s2">&amp;#34;keyxxx&amp;#34;&lt;/span> &lt;span class="c1"># create a token in the NordVPN dashboard&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">sudo wgnord c Germany &lt;span class="c1"># connect to a server, e.g Germany &lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">sudo wgnord d &lt;span class="c1"># disconnect&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;hr>
+&lt;p>Cover image by &lt;a href="https://unsplash.com/@pawel_czerwinski">Pawel Czerwinski&lt;/a> on &lt;a href="https://unsplash.com/photos/a-black-and-blue-abstract-background-with-squares-and-rectangles-O_lLr6e8NtQ">Unsplash&lt;/a>&lt;/p></description></item><item><title>Git Cheatsheet in 2024</title><link>https://kenshin.ninja/p/git-cheatsheet-2024/</link><pubDate>Sun, 04 Feb 2024 11:23:00 +0000</pubDate><guid>https://kenshin.ninja/p/git-cheatsheet-2024/</guid><description>&lt;img src="https://kenshin.ninja/p/git-cheatsheet-2024/cover.jpg" alt="Featured image of post Git Cheatsheet in 2024" />&lt;h1 id="git">Git
+&lt;/h1>&lt;h2 id="install">Install
+&lt;/h2>&lt;ul>
+&lt;li>&lt;a class="link" href="https://git-scm.com/download/linux" target="_blank" rel="noopener"
+>https://git-scm.com/download/linux&lt;/a>&lt;/li>
+&lt;li>&lt;a class="link" href="https://docs.github.com/en/get-started/quickstart/set-up-git" target="_blank" rel="noopener"
+>https://docs.github.com/en/get-started/quickstart/set-up-git&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">sudo add-apt-repository ppa:git-core/ppa
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">sudo apt update
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">sudo apt install git
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">git --version
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h2 id="configure">Configure
+&lt;/h2>&lt;h3 id="configure-git-settings">Configure git settings
+&lt;/h3>&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">git config --global user.name &amp;#34;Xxxxxx&amp;#34;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">git config --global user.email &amp;#34;xxxxxx@xxxxxx.xyz&amp;#34;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"># Enable main as the default branch
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">git config --global init.defaultBranch main
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"># Enable colours
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">git config --global color.ui auto
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"># Check the configuration
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">git config --list
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h3 id="generate-ssh-key">Generate ssh key
+&lt;/h3>&lt;p>&lt;a class="link" href="https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent" target="_blank" rel="noopener"
+>https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent&lt;/a>&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;span class="lnt">12
+&lt;/span>&lt;span class="lnt">13
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">ssh-keygen -t ed25519 -C &amp;#34;xxxxxx@xxxxxx.xyz&amp;#34;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"># save in:
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">/home/user/.ssh/id_ed25519
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"># start the ssh agent:
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">eval &amp;#34;$(ssh-agent -s)&amp;#34;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"># add the new key in the agent we just startred:
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">ssh-add ~/.ssh/id_ed25519
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"># see the new public key:
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">cat ~/.ssh/id_ed25519.pub
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>Using ssh to connect with GitHub:
+&lt;a class="link" href="https://docs.github.com/en/authentication/connecting-to-github-with-ssh/using-ssh-agent-forwarding" target="_blank" rel="noopener"
+>https://docs.github.com/en/authentication/connecting-to-github-with-ssh/using-ssh-agent-forwarding&lt;/a>&lt;/p>
+&lt;h2 id="connect-to-github-repo">Connect to Github Repo
+&lt;/h2>&lt;h3 id="first-initialization">First initialization
+&lt;/h3>&lt;ul>
+&lt;li>&lt;a class="link" href="https://git-scm.com/book/en/v2/Git-Basics-Getting-a-Git-Repository" target="_blank" rel="noopener"
+>https://git-scm.com/book/en/v2/Git-Basics-Getting-a-Git-Repository&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;span class="lnt">5
+&lt;/span>&lt;span class="lnt">6
+&lt;/span>&lt;span class="lnt">7
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">cd webdev/sites/myWebsite
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">git init
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">git add .
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">git commit -m &amp;#34;first commit&amp;#34;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">git branch -M main
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">git remote add origin git@github.com:xxxxxx/xxxxxx.git
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">git push -u origin main
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h3 id="connect-to-remote">Connect to Remote
+&lt;/h3>&lt;ul>
+&lt;li>&lt;a class="link" href="https://git-scm.com/book/en/v2/Git-Basics-Working-with-Remotes" target="_blank" rel="noopener"
+>https://git-scm.com/book/en/v2/Git-Basics-Working-with-Remotes&lt;/a>&lt;/li>
+&lt;li>&lt;a class="link" href="https://docs.github.com/en/get-started/getting-started-with-git/about-remote-repositories" target="_blank" rel="noopener"
+>https://docs.github.com/en/get-started/getting-started-with-git/about-remote-repositories&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;span class="lnt">5
+&lt;/span>&lt;span class="lnt">6
+&lt;/span>&lt;span class="lnt">7
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">git clone git@github.com:xxxxxx/xxxxxx.git
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"># Restore Submodules (themes) if any:
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">git submodule update --init --recursive
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">git remote -v
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">git remote show origin
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h3 id="make-commits">Make Commits
+&lt;/h3>&lt;ul>
+&lt;li>&lt;a class="link" href="https://git-scm.com/book/en/v2/Git-Basics-Recording-Changes-to-the-Repository" target="_blank" rel="noopener"
+>https://git-scm.com/book/en/v2/Git-Basics-Recording-Changes-to-the-Repository&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">git status
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">git add file
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">git commit -m &amp;#34;commit&amp;#34;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">git push -u origin main
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>Cover photo by &lt;a href="https://unsplash.com/@pawel_czerwinski">Pawel Czerwinski&lt;/a> on &lt;a href="https://unsplash.com/photos/an-abstract-photo-of-a-green-and-black-background-pSNM2lEOnTo">Unsplash&lt;/a>&lt;/p></description></item><item><title>Hello World</title><link>https://kenshin.ninja/p/hello-world/</link><pubDate>Sun, 04 Feb 2024 10:23:00 +0000</pubDate><guid>https://kenshin.ninja/p/hello-world/</guid><description>&lt;img src="https://kenshin.ninja/p/hello-world/cover.jpg" alt="Featured image of post Hello World" />&lt;p>Welcome to Kenshin.Ninja! This is the start of developing this website with Hugo and GitHub Pages.
+So far so good&amp;hellip;&lt;/p>
+&lt;blockquote>
+&lt;p>Photo by &lt;a class="link" href="https://unsplash.com/@pawel_czerwinski" target="_blank" rel="noopener"
+>Pawel Czerwinski&lt;/a> on &lt;a class="link" href="https://unsplash.com/" target="_blank" rel="noopener"
+>Unsplash&lt;/a>&lt;/p>&lt;/blockquote></description></item><item><title>Archives</title><link>https://kenshin.ninja/archives/</link><pubDate>Sun, 06 Mar 2022 00:00:00 +0000</pubDate><guid>https://kenshin.ninja/archives/</guid><description/></item><item><title>Links</title><link>https://kenshin.ninja/links/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kenshin.ninja/links/</guid><description>&lt;p>To use this feature, add &lt;code>links&lt;/code> section to frontmatter.&lt;/p>
+&lt;p>This page&amp;rsquo;s frontmatter:&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;span class="lnt">5
+&lt;/span>&lt;span class="lnt">6
+&lt;/span>&lt;span class="lnt">7
+&lt;/span>&lt;span class="lnt">8
+&lt;/span>&lt;span class="lnt">9
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-yaml" data-lang="yaml">&lt;span class="line">&lt;span class="cl">&lt;span class="nt">links&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>- &lt;span class="nt">title&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">GitHub&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">description&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">GitHub is the world&amp;#39;s largest software development platform.&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">website&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">https://github.com&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">image&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>- &lt;span class="nt">title&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">TypeScript&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">description&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">TypeScript is a typed superset of JavaScript that compiles to plain JavaScript.&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">website&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">https://www.typescriptlang.org&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">image&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">ts-logo-128.jpg&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>&lt;code>image&lt;/code> field accepts both local and external images.&lt;/p></description></item><item><title>Search</title><link>https://kenshin.ninja/search/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kenshin.ninja/search/</guid><description/></item></channel></rss>
